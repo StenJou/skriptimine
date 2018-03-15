@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# kasutajate nimiekiri kujul Perenimi, Eesnimi
+#
+# skripti algus
+#
+who | cut -f1 -d" " | cut -f2 -d"." > perenimi # lõikame perenimi - see on 2. element peale punkti ja salvestame faili
+who | cut -f1 -d" " | cut -f1 -d"." > eesnimi # lõikame eesnimi _ see on 1. element enne punkti ja salvestame faili
+paste -d"." perenimi eesnimi > nimed # kleebime need failid vastavas järjekorras kokku
+cat nimed | sort | uniq # sorteerime väljundi ja võtame korduvad välja
+#
+# skripti lõpp
