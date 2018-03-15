@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# skripti algus
+echo -n "Sten Tabur" # väljastab ilma reavahetuseta nime
+echo "ISP117" # väljastab reavahetusega õppegrupi
+echo "Praegune aine tundub huvitav" # väljastab reavahetusega teksti
+echo "Praegused ülesanded olid suhteliselt lihtsad aga edasijõudmiseks peab veel palju õppima" # väljastab reavahetusega teksti
+#
+# skripti lõpp
