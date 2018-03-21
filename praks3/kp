@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Tänane kuupäev" #väljastab reavahetusega "Tänane kuupäev"
+
+date +"%A, %B %D, %Y" #Väljastab päeva, kuupäeva ja aasta
+
+date +"%H:%M" #väljastab tunni ja minutid
+
+cal #väljastab kalendri
+
