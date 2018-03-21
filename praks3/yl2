@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+#log failide sortimine /var-is
+#
+find /var -type f -name "*.log" 2> /dev/null | sort -n -r #leiab /var kataloogist faili mis lõppeb ".log"-iga ja sorteerib need vastavalt ridade arvule
+# 
