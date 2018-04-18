@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+#skripti algus
+#
+echo -n "Sisesta kuu number:"
+read kuu
+if [[ $kuu -ge 1 ]] && [[ $kuu -le 2 ]] #arvestab numbrid 1-2
+then
+         echo "On Talv" #väljastab vastuse 
+elif [[ $kuu -ge 3 ]] && [[$kuu -le 5 ]]
+then
+         echo "On Kevad"
+elif [[ $kuu -ge 6 ]] && [[$kuu -le 8 ]]
+then
+         echo "On Suvi"
+elif [[ $kuu -ge 9 ]] && [[ $kuu -le 11 ]]
+then
+         echo "On Sugis"
+
+fi
+#
+#skripti lõpp
