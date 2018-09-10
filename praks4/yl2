@@ -1,0 +1,16 @@
+#!/bin/bash
+#skriti algus
+echo "Sisestage aluskandiku pikkus: " #laseb kasutajal sisestada kandiku pikkuse
+read aluskandiku_pikkus #kandiku pikkus
+echo "Sisestage aluskandiku laius: " #laseb kasutajal siestada kandiku laiuse
+read aluskandiku_laius #kandiku laius
+echo "Kui suuri küpsiseid Te tordis kasutate: " #laseb kasutajal sisestada kõpsise suuruse
+read kypsised #küpsiste suurus
+echo "Mitu kihti on tordis: " #laseb kasutajal sisestada kihtide arvu
+read kihid #kihtide arv
+echo "Mitu küpsist on ühes pakis: " #laseb sisestada küpsiste arvu ühes pakis
+read pakis #küpsiste arv pakis
+
+echo "Teil läheb vaja `expr $aluskandiku_pikkus \* $aluskandiku_laius / $kypsised \* $kypsised \* $kihid / $pakis` pakki"  #arvutab välja kui mitu pakki küpsiseid on kasutajal tarvis
+
+#skripti lõpp
