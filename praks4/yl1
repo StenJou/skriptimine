@@ -1,0 +1,8 @@
+#!/bin/bash
+#Skripti algus
+echo "Sisestage enda ees- ning perekonnanimi: " #Väljastab antud lause
+read eesnimi perenimi #Kasutaja saab sisestada enda eesnime ning perekonnanime
+echo "Sinu eesnimi on $eesnimi ning perekonnanimi on $perenimi" #Väljastab lausega kasutaja ees- ning perekonnanime
+echo "Tervist, $eesnimi $perenimi !" #Tervitab kasutajat
+#Skripti lõpp
+ 
