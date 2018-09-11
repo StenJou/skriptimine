@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo -n "Sisesta kylje a vaartus: "
+read a
+echo -n "Sisesta kylje b vaartus: "
+read b
+a_ruut=$(($a**2))
+b_ruut=$(($b**2))
+c_ruut=$(($a_ruut+$b_ruut))
+c=`echo "scale=2;sqrt($c_ruut)" | bc`
+echo "c=$c"
+
+#skripti lõpp
