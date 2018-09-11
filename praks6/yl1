@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo -n "Sisestage suvaline täisarv: " #sisestatakse suvaline täisarv
+read arv
+jagan=$(($arv % 2)) #jagatakse antud arv kahega
+if [ $jagan -eq 0 ]
+then
+echo "Arv $arv on paaris" #kui arv on paaris väljastakse see lause
+else #kui on teisiti
+echo "Arv $arv on paaritu" #kui arv on paaritu väljastakse see lause
+fi
