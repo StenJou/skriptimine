@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Pühapäev - 0, Esmaspäev - 1, Teisipäev - 3, ..., Laupäev - 6"
+echo -n "Sisestage oma ära sõitmise päev: "
+read esimene
+echo -n "Sisestage, mitu ööpäeva olete reisil: "
+read paevad
+veel=$(($paevad %7))
+lopp=$(($esimene+$veel))
+
+echo "Olete tagasi päeval number $lopp"
+
+#Skripti lõpp
