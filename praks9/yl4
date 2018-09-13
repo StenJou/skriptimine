@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo -n "Sisesta ridade arv: "
+read arv
+	for (( r=1; r<=$arv; r++ )) #ridade numbrid
+	do
+		echo -n "$r. " #trükib rea numbri
+	for (( v=1; v<=$r; v++ ))
+	do
+		echo -n "* "
+	done
+		echo ""
+done
